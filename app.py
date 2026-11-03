@@ -102,8 +102,11 @@ with tab3:
     st.caption("SKIP means the full jitter measurement is not needed for this die. RUN means measure it as usual.")
 
 with tab4:
-    rp = ROOT / "results" / "report.md"
-    ip = ROOT / "results" / "pll_results.png"
+    for base in [ROOT / "results", ROOT]:
+        ip = base / "pll_results.png"
+        rp = base / "report.md"
+        if ip.exists() or rp.exists():
+            break
     if ip.exists():
         st.image(str(ip))
     if rp.exists():
