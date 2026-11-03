@@ -3,7 +3,7 @@
 Reduces PLL production test time using adaptive lock-time control and ML-based jitter test elimination.
 All data is synthetic.
 
-**Live demo:** paste your Streamlit link here
+**Live demo:** https://pll-test-time-reduction-d6n5c84tphfhpw4vvcij4m.streamlit.app/
 
 ## Files
 | File | Purpose |
@@ -12,7 +12,7 @@ All data is synthetic.
 | `app.py` | Streamlit demo (lock-time calculator, jitter skip/run decision, report) |
 | `synthetic_pll_*.csv` | The two provided datasets (unchanged) |
 | `generate_synthetic_pll_data.py` | Provided generator script (unchanged) |
-| `results/` | `report.md`, `pll_results.png` and tables from the last run |
+| `results/` | `report.md`, `pll_results.png`, `*.csv` tables | Results from the last run |
 
 ## Run locally
 ```
